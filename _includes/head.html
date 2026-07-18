@@ -1,0 +1,7 @@
+{% assign t = site.data.site[page.lang] %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t.meta.title }}</title>
+<meta name="description" content="{{ t.meta.description }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/images/nix_logo.svg' | relative_url }}" type="image/svg+xml">

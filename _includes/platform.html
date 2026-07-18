@@ -1,0 +1,17 @@
+{% assign t = site.data.site[page.lang] %}
+<section class="section section-alt" id="platform">
+  <div class="container">
+    <h2 class="section-title">{{ t.platform.title }}</h2>
+    <p class="section-subtitle">{{ t.platform.subtitle }}</p>
+    <ul class="platform-list">
+      {% for item in t.platform.items %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <div class="stack-badges">
+      {% for tech in t.platform.stack %}
+      <span class="badge">{{ tech }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>

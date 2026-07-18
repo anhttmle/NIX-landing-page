@@ -1,0 +1,14 @@
+{% assign t = site.data.site[page.lang] %}
+<section class="section" id="how-it-works">
+  <div class="container">
+    <h2 class="section-title">{{ t.how_it_works.title }}</h2>
+    <ol class="steps">
+      {% for step in t.how_it_works.steps %}
+      <li class="step">
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.body }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

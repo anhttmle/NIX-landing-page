@@ -1,0 +1,24 @@
+title: Carbonix by NIX
+description: Nền tảng ESG tái chế rác thải minh bạch — ESG waste recycling platform
+url: "https://carbonix.vn"
+baseurl: ""
+lang: vi
+
+app_url: "https://app.carbonix.vn"
+contact_email: "admin@carbonix.vn"
+
+markdown: kramdown
+theme: null
+
+plugins:
+  - jekyll-feed
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - vendor

@@ -1,0 +1,7 @@
+{% assign t = site.data.site[page.lang] %}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-tagline">{{ t.footer.tagline }}</p>
+    <p class="footer-rights">&copy; {{ site.time | date: '%Y' }} {{ t.footer.rights }}</p>
+  </div>
+</footer>

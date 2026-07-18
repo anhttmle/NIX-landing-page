@@ -1,0 +1,12 @@
+{% assign t = site.data.site[page.lang] %}
+<section class="hero section">
+  <div class="container hero-inner">
+    <p class="eyebrow">{{ t.hero.eyebrow }}</p>
+    <h1>{{ t.hero.title }}</h1>
+    <p class="lead">{{ t.hero.subtitle }}</p>
+    <div class="hero-actions">
+      <a href="{{ site.app_url }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">{{ t.hero.cta_primary }}</a>
+      <a href="#how-it-works" class="btn btn-secondary">{{ t.hero.cta_secondary }}</a>
+    </div>
+  </div>
+</section>

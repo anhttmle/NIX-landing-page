@@ -1,0 +1,171 @@
+vi:
+  meta:
+    title: "Carbonix by NIX — Nền tảng ESG tái chế rác thải"
+    description: "Quyên góp rác tái chế, xác minh QR, theo dõi hành trình và tham gia dự án xanh. Minh bạch, đo lường được, gắn điểm NIX."
+  nav:
+    features: "Tính năng"
+    how_it_works: "Cách hoạt động"
+    audiences: "Đối tượng"
+    platform: "Nền tảng"
+    contact: "Liên hệ"
+    lang_switch: "English"
+    lang_switch_url: "/en/"
+  hero:
+    eyebrow: "Nền tảng ESG · Tái chế rác thải"
+    title: "Biến rác tái chế thành tác động đo lường được"
+    subtitle: "Carbonix kết nối cư dân, đội vận hành và tổ chức trong một vòng đời minh bạch — từ quyên góp, xác minh QR đến theo dõi hành trình rác và tham gia dự án xanh."
+    cta_primary: "Mở ứng dụng"
+    cta_secondary: "Xem cách hoạt động"
+  problem:
+    title: "Vấn đề & Giải pháp"
+    items:
+      - title: "Thiếu minh bạch"
+        body: "Rác tái chế thường mất dấu sau khi thu gom. Carbonix ghi nhận từng hoạt động và cho phép truy vết hành trình xử lý."
+      - title: "Khó đo lường tác động"
+        body: "Điểm NIX và dự án xanh giúp tổ chức và cộng đồng thấy rõ đóng góp theo loại rác, đơn vị và mục tiêu cụ thể."
+      - title: "Vận hành phân mảnh"
+        body: "Một ứng dụng cho cả cư dân và operator — quyên góp, quét QR xác minh, chuyển giao giữa các điểm trong chuỗi thu gom."
+  how_it_works:
+    title: "Cách hoạt động"
+    steps:
+      - title: "1. Quyên góp"
+        body: "Cư dân đóng gói rác tái chế (nhựa, dầu, kim loại, giấy) và tạo yêu cầu quyên góp kèm mã QR."
+      - title: "2. Xác minh QR"
+        body: "Operator quét mã QR tại điểm thu gom để xác nhận hoặc từ chối — chống tự xác minh, hỗ trợ liên tổ chức."
+      - title: "3. Theo dõi hành trình"
+        body: "Mỗi lô rác có cây hành trình: lá → pool → chuyển giao — cư dân và admin xem timeline minh bạch."
+      - title: "4. Dự án xanh"
+        body: "Tham gia dự án, đóng góp điểm NIX hoặc theo mục tiêu loại rác — gamification gắn với hành vi thực tế."
+  features:
+    title: "Tính năng đã triển khai"
+    items:
+      - title: "Ứng dụng hai vai trò"
+        body: "Một app Flutter cho cư dân và operator — chuyển vai trò trong cùng phiên đăng nhập."
+      - title: "Quyên góp & QR"
+        body: "Tạo hoạt động quyên góp đa dòng, mã QR chuẩn hóa để operator xác minh nhanh tại hiện trường."
+      - title: "Waste journey"
+        body: "Theo dõi hành trình rác từ xác minh đến pool và chuyển giao giữa các điểm trong chuỗi."
+      - title: "Dự án xanh & NIX"
+        body: "Danh mục loại rác, điểm NIX, dự án với mục tiêu rác hoặc tiền tệ — tham gia và đóng góp."
+      - title: "Admin dashboard"
+        body: "Quản lý tổ chức, người dùng, catalog, dự án và xem hoạt động — Next.js với RBAC."
+      - title: "Onboarding cấu hình"
+        body: "Luồng hướng dẫn đa bước theo vai trò và ngữ cảnh — admin soạn, publish, theo dõi tiến độ."
+  audiences:
+    title: "Dành cho ai"
+    items:
+      - title: "Cư dân"
+        body: "Quyên góp rác tái chế, theo dõi hành trình, tham gia dự án xanh và tích lũy điểm NIX."
+      - title: "Operator"
+        body: "Nhân viên thu gom, hub, logistic, nhà máy — quét QR, xác minh và chuyển giao lô rác."
+      - title: "Tổ chức"
+        body: "Doanh nghiệp và đối tác ESG triển khai chương trình tái chế có dữ liệu đo lường được."
+      - title: "Quản trị"
+        body: "Admin cấu hình catalog, dự án, onboarding và quản lý người dùng theo phạm vi tổ chức."
+  platform:
+    title: "Nền tảng kỹ thuật"
+    subtitle: "Kiến trúc production-ready, đang vận hành tại carbonix.vn"
+    items:
+      - "Microservices FastAPI (auth, onboarding, gamification, tracking)"
+      - "Kong API Gateway với plugin xác thực tùy chỉnh"
+      - "PostgreSQL, MinIO/S3 cho media, Docker Compose"
+    stack:
+      - "Flutter"
+      - "Next.js"
+      - "FastAPI"
+      - "Kong"
+      - "PostgreSQL"
+  cta:
+    title: "Sẵn sàng trải nghiệm Carbonix?"
+    subtitle: "Ứng dụng đang phục vụ tại app.carbonix.vn. Liên hệ để tìm hiểu hợp tác hoặc demo cho tổ chức."
+    button: "Mở ứng dụng"
+    email_label: "Liên hệ"
+  footer:
+    tagline: "Carbonix by NIX — ESG waste recycling platform"
+    rights: "Bản quyền thuộc NIX / Carbonix."
+
+en:
+  meta:
+    title: "Carbonix by NIX — ESG Waste Recycling Platform"
+    description: "Donate recyclables, verify with QR, track waste journeys, and join green projects. Transparent, measurable impact with NIX points."
+  nav:
+    features: "Features"
+    how_it_works: "How it works"
+    audiences: "Audiences"
+    platform: "Platform"
+    contact: "Contact"
+    lang_switch: "Tiếng Việt"
+    lang_switch_url: "/"
+  hero:
+    eyebrow: "ESG Platform · Waste Recycling"
+    title: "Turn recycling into measurable impact"
+    subtitle: "Carbonix connects residents, operators, and organizations in a transparent lifecycle — from donation and QR verification to waste journey tracking and green projects."
+    cta_primary: "Open the app"
+    cta_secondary: "See how it works"
+  problem:
+    title: "Problem & Solution"
+    items:
+      - title: "Lack of transparency"
+        body: "Recyclables often disappear after collection. Carbonix records every activity and enables end-to-end journey tracing."
+      - title: "Hard to measure impact"
+        body: "NIX points and green projects make contributions visible by waste type, unit, and concrete goals."
+      - title: "Fragmented operations"
+        body: "One app for residents and operators — donate, scan QR to verify, and hand off batches across the collection chain."
+  how_it_works:
+    title: "How it works"
+    steps:
+      - title: "1. Donate"
+        body: "Residents package recyclables (plastic, oil, metal, paper) and create a donation request with a QR code."
+      - title: "2. Verify QR"
+        body: "Operators scan the QR at collection points to approve or reject — cross-org support, no self-verification."
+      - title: "3. Track journey"
+        body: "Each batch has a journey tree: leaf → pool → transfer — residents and admins see a clear timeline."
+      - title: "4. Green projects"
+        body: "Join projects and contribute NIX points or waste goals — gamification tied to real behavior."
+  features:
+    title: "Shipped features"
+    items:
+      - title: "Dual-role mobile app"
+        body: "One Flutter app for residents and operators — switch roles within the same login session."
+      - title: "Donation & QR"
+        body: "Multi-line donation activities with standardized QR codes for fast field verification."
+      - title: "Waste journey"
+        body: "Track waste from verification through pools and transfers across the collection chain."
+      - title: "Green projects & NIX"
+        body: "Waste type catalog, NIX points, projects with waste or currency goals — join and contribute."
+      - title: "Admin dashboard"
+        body: "Manage orgs, users, catalogs, projects, and read-only activity views — Next.js with RBAC."
+      - title: "Configurable onboarding"
+        body: "Multi-step flows by role and context — admins author, publish, and track progress."
+  audiences:
+    title: "Who it's for"
+    items:
+      - title: "Residents"
+        body: "Donate recyclables, track journeys, join green projects, and earn NIX points."
+      - title: "Operators"
+        body: "Collectors, hubs, logistics, plants — scan QR, verify, and transfer batches."
+      - title: "Organizations"
+        body: "Enterprises and ESG partners run recycling programs with measurable data."
+      - title: "Administrators"
+        body: "Configure catalogs, projects, onboarding, and users within org scope."
+  platform:
+    title: "Technical platform"
+    subtitle: "Production-ready architecture live at carbonix.vn"
+    items:
+      - "FastAPI microservices (auth, onboarding, gamification, tracking)"
+      - "Kong API Gateway with custom auth plugin"
+      - "PostgreSQL, MinIO/S3 for media, Docker Compose"
+    stack:
+      - "Flutter"
+      - "Next.js"
+      - "FastAPI"
+      - "Kong"
+      - "PostgreSQL"
+  cta:
+    title: "Ready to explore Carbonix?"
+    subtitle: "The app is live at app.carbonix.vn. Contact us for partnerships or an organizational demo."
+    button: "Open the app"
+    email_label: "Contact"
+  footer:
+    tagline: "Carbonix by NIX — ESG waste recycling platform"
+    rights: "Copyright NIX / Carbonix."
