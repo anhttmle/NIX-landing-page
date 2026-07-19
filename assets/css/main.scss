@@ -48,8 +48,12 @@ a:hover {
 }
 
 .container {
-  width: min(100% - 2rem, $max-width);
-  margin-inline: auto;
+  width: 100%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .section {
@@ -62,7 +66,7 @@ a:hover {
 
 .section-title {
   margin: 0 0 2rem;
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-size: #{"clamp(1.75rem, 3vw, 2.25rem)"};
   line-height: 1.2;
   text-align: center;
 }
@@ -162,7 +166,7 @@ a:hover {
 
 .hero h1 {
   margin: 0 0 1rem;
-  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-size: #{"clamp(2rem, 5vw, 3.25rem)"};
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
@@ -334,12 +338,13 @@ a:hover {
 
 .cta-section h2 {
   margin: 0 0 1rem;
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-size: #{"clamp(1.75rem, 3vw, 2.25rem)"};
 }
 
 .cta-section .lead {
   color: rgba(255, 255, 255, 0.92);
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-section .btn-primary {

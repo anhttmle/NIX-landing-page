@@ -40,6 +40,27 @@ Example — expose on LAN:
 make serve HOST=0.0.0.0
 ```
 
+## Docker deploy (production / local stack)
+
+Service `landing_site_web` in root `docker-compose.yml` — Jekyll build → nginx.
+
+| Environment | URL |
+|-------------|-----|
+| Local (Caddy dev) | https://landing.localhost |
+| Production | https://landing.carbonix.vn |
+
+```bash
+# From repo root
+make deploy
+
+# Or build image only
+make -C landing_site docker-build
+```
+
+**DNS (production):** A record `landing.carbonix.vn` → server IP (cùng host với `app` / `admin`).
+
+`SITE_URL` build arg mặc định `https://landing.carbonix.vn` (xem `Dockerfile`).
+
 ## GitHub Pages deploy
 
 ### Option A: GitHub Actions (recommended for monorepo)
@@ -60,9 +81,15 @@ make install && make build
 
 ### Custom domain
 
-1. **Settings → Pages → Custom domain:** `carbonix.vn` (or `www.carbonix.vn`).
-2. DNS: CNAME `carbonix.vn` → `<user>.github.io` (or A records per GitHub docs).
-3. Ensure `_config.yml` has `url: "https://carbonix.vn"` and `baseurl: ""`.
+1. **Settings → Pages → Custom domain:** `carbonix.vn` hoặc `landing.carbonix.vn` tùy chiến lược.
+2. Override `url` khi build (Jekyll 4 không còn flag `--url`):
+
+```bash
+printf 'url: "https://carbonix.vn"\n' > _config.pages.yml
+bundle exec jekyll build --config _config.yml,_config.pages.yml
+```
+
+3. Ensure `baseurl: ""` trong `_config.yml`.
 
 If using `https://<user>.github.io/<repo>/`, set `baseurl: "/<repo>"` in `_config.yml`.
 
@@ -72,5 +99,5 @@ Edit copy in [`_data/site.yml`](_data/site.yml) (`vi` and `en` keys). Sections: 
 
 ## Out of scope
 
-- Not wired into root Docker Compose or Caddy.
+- GitHub Pages và Docker có thể dùng song song; production Docker dùng `landing.carbonix.vn`.
 - Only showcases **shipped** features (no voucher redemption, NIX Hub, etc.).

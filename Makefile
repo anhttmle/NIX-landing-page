@@ -1,4 +1,4 @@
-.PHONY: help install serve build preview clean check
+.PHONY: help install serve build preview clean check docker-build
 
 PORT ?= 4000
 HOST ?= 127.0.0.1
@@ -29,6 +29,7 @@ help:
 	@echo "  make preview    build then serve production artifact"
 	@echo "  make check      build + verify VI/EN pages exist"
 	@echo "  make clean      remove _site and Jekyll caches"
+	@echo "  make docker-build  build nginx image for docker compose"
 	@echo ""
 	@echo "Variables: PORT=$(PORT) HOST=$(HOST) DRAFTS='--drafts' (optional)"
 
@@ -64,3 +65,8 @@ check: build
 	@test -f _site/index.html || (echo "Missing _site/index.html" && exit 1)
 	@test -f _site/en/index.html || (echo "Missing _site/en/index.html" && exit 1)
 	@echo "check OK: VI and EN pages built"
+
+docker-build:
+	docker build -t nix-landing-site-web \
+		--build-arg SITE_URL=https://landing.carbonix.vn \
+		.
